@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <title>Encriptador</title>
+    </head>
+    
+    <body>
+        <header>
+            <img class="logo" src="img/Logo.png" alt="Logo de Alura">
+        </header>
+
+        <main>
+            <section>
+                <textarea id="textInput" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                <div>
+                    <h6 id="warning">Solo letras minúsculas y sin acentos</h6>
+                </div>
+                <div class="buttons">
+                    <button id="btnEncrypt" onclick="btnEncryptText()">Encriptar</button>
+                    <button class="btnDecrypt" onclick="btnDecryptText()">Desencriptar</button>
+                </div>
+            </section>
+            
+            <section>
+                <textarea id="message" cols="30" rows="10" readonly = "readonly"></textarea>
+                <div>
+                    <button class="btnCopy" onclick="btnCopyText()">Copiar</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; Hecho por Junior Ortiz - 2024</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
